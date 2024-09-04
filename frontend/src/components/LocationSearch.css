@@ -1,0 +1,65 @@
+.location-search {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.search-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.restaurant-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.restaurant-list li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.restaurant-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.restaurant-link:hover {
+  text-decoration: underline;
+}

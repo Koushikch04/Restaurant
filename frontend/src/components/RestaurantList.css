@@ -1,0 +1,112 @@
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  max-width: 300px;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.restaurant-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.restaurant-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+
+.restaurant-item:hover {
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Restaurant item heading */
+.restaurant-item h2 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+/* Restaurant item paragraph */
+.restaurant-item p {
+  margin: 0 0 10px;
+  color: #555;
+}
+
+/* Link styling in restaurant item */
+.restaurant-item a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.restaurant-item a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Pagination container */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-size: 1rem;
+}
+
+.pagination button.active {
+  background-color: #ff6347;
+}
+
+.pagination button:hover {
+  background-color: #ff6347;
+}
+
+.pagination button:disabled {
+  background-color: #ffe4e1;
+  color: #ff7f50;
+  cursor: not-allowed;
+}
+
+.ellipsis {
+  margin: 0 5px;
+  font-size: 1rem;
+  color: #333;
+}

@@ -1,0 +1,158 @@
+.image-search {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.image-search input[type="file"] {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.image-search button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.image-search button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.error {
+  color: #d9534f;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.info {
+  color: #666;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.top-tags {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.top-tags h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.top-tags ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.top-tags li {
+  font-size: 1rem;
+  color: #007bff;
+  margin: 0;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px; /* Consistent card width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s, transform 0.2s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column; /* Ensures content flows vertically */
+}
+
+.restaurant-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px; /* Consistent card image height */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  flex: 1; /* Ensure content takes up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out title and info */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card-info {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+  flex: 1; /* Ensure info area expands to fill space */
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1rem;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.ellipsis {
+  margin: 0 5px;
+  font-size: 1.2rem;
+  color: #333;
+}
